@@ -1,12 +1,12 @@
-﻿<nav class="nav navbar-expand-lg navbar-dark bg-primary fixed-top">
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/">Shopping</a>
-        <ul>
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a href="#" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Products</a>
+                <a asp-controller="Shop" asp-action="List" class="nav-link">Products</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Cart</a>
@@ -26,6 +26,10 @@
             <li class="nav-item">
                 <a href="#" class="nav-link">Admin Categories</a>
             </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto">
+
             <li class="nav-item">
                 <a href="#" class="nav-link">Logout</a>
             </li>
